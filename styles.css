@@ -28,11 +28,14 @@ body {
 
   transform: rotate(-5deg);
   transition: all 1s;
+
+  box-shadow: 0 0 30px 20px #f9f9f9;
 }
 
 /* .card footer img:hover { */
 .card:hover {
-  transform: rotate(0) scale(1.15);
+  /* transform: rotate(0) scale(1.15); */
+  transform: rotate(0);
 }
 
 .text {
@@ -55,6 +58,10 @@ footer {
   display: flex;
   align-items: center;
   column-gap: 2rem;
+
+  /* Gradient from this website: https://cssgradient.io/*/
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, #020024 0%, #74d690 35%, #5cbfbb 100%);
 }
 
 footer p {

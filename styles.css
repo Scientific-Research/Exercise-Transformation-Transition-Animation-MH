@@ -30,7 +30,8 @@ section {
   font-weight: 600;
 
   transform: rotate(-5deg);
-  transition: all 0.5s;
+  transition: transform 0.5s;
+  /* transition: all 0.5s; */
 
   /* box-shadow:inset hoff voff blur spread rgba(0, 0, 0, .5); */
   box-shadow: 0 0 20px 5px rgb(230, 230, 230);
@@ -68,7 +69,9 @@ img {
   margin-left: 3.5rem;
   /* padding-left: 4rem; */
   border: 3px solid white;
-  transition: all 1s;
+
+  /* transition: all 0.5s; */
+  transition: transform 0.5s;
 }
 
 footer {
@@ -81,9 +84,7 @@ footer {
   column-gap: 2rem;
 
   /* Gradient from this website: https://cssgradient.io/*/
-  background: rgb(2, 0, 36);
-  /* background: linear-gradient(90deg, #020024 0%, #74d690 35%, #5cbfbb 100%); */
-  /* background: linear-gradient(270deg, #74d690 10%, #5cbfbb 100%); */
+  background: rgb(92, 191, 187);
   background: linear-gradient(90deg, #5cbfbb 0%, #74d690 100%);
 }
 

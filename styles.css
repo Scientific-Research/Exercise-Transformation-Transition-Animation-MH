@@ -11,6 +11,7 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 /* Instead of polluting the body with other features like flex features, i defined the section in html and here too,to move the features from body in section below! */
@@ -24,6 +25,7 @@ section {
 
 .card {
   max-width: 50rem;
+  /* max-width: 500px; */
   /* background: greenyellow; */
   /* padding: 2rem; */
   border-radius: 3rem;
@@ -48,7 +50,8 @@ section {
 /* .card footer img:hover { */
 .card:hover {
   /* transform: rotate(0) scale(1.15); */
-  transform: rotate(360deg);
+  /* transform: rotate(360deg); */
+  transform: rotate(0);
 }
 
 .card footer img:hover {
@@ -66,6 +69,7 @@ img {
   border-radius: 3rem;
   margin-left: 5rem;
   border: 3px solid white;
+  transition: all 1s;
 }
 
 footer {

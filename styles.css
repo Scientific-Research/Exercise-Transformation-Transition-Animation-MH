@@ -38,6 +38,10 @@ body {
   transform: rotate(0);
 }
 
+.card footer img:hover {
+  transform: scale(1.15);
+}
+
 .text {
   padding: 4rem;
   padding-bottom: 3rem;

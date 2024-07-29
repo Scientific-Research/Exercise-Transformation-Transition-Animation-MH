@@ -25,20 +25,12 @@ section {
 
 .card {
   max-width: 50rem;
-  /* max-width: 500px; */
-  /* background: greenyellow; */
-  /* padding: 2rem; */
   border-radius: 3rem;
   overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
-  row-gap: 1rem;
+  font-weight: 600;
 
   transform: rotate(-5deg);
-  transition: all 1s;
+  transition: all 0.5s;
 
   /* box-shadow:inset hoff voff blur spread rgba(0, 0, 0, .5); */
   box-shadow: 0 0 20px 5px rgb(230, 230, 230);
@@ -54,7 +46,13 @@ section {
   transform: rotate(0);
 }
 
-.card footer img:hover {
+/* With the following statement, when i hover on the card,only card will rotate and when i hover on the image, the image will be scaled up! */
+/* .card footer img:hover {
+  transform: scale(1.15);
+} */
+
+/* But with the following statement,it is just enough to hover one time on the card, both card will rotate and also the image will sclae up at the same time! */
+.card:hover footer img {
   transform: scale(1.15);
 }
 
@@ -67,7 +65,8 @@ img {
   width: 6rem;
   height: 6rem;
   border-radius: 3rem;
-  margin-left: 5rem;
+  margin-left: 3.5rem;
+  /* padding-left: 4rem; */
   border: 3px solid white;
   transition: all 1s;
 }
@@ -84,7 +83,8 @@ footer {
   /* Gradient from this website: https://cssgradient.io/*/
   background: rgb(2, 0, 36);
   /* background: linear-gradient(90deg, #020024 0%, #74d690 35%, #5cbfbb 100%); */
-  background: linear-gradient(270deg, #74d690 10%, #5cbfbb 100%);
+  /* background: linear-gradient(270deg, #74d690 10%, #5cbfbb 100%); */
+  background: linear-gradient(90deg, #5cbfbb 0%, #74d690 100%);
 }
 
 footer p {

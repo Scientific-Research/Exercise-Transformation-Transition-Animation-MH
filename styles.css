@@ -11,6 +11,12 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2rem;
+
+  /* To bring the card in the middle of the page! */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
@@ -31,6 +37,9 @@ body {
 
   /* box-shadow:inset hoff voff blur spread rgba(0, 0, 0, .5); */
   box-shadow: 0 0 20px 5px rgb(230, 230, 230);
+
+  /* This with height: 100vh; didn't work to bring the card in the middle of the page, that's why i used flex to do that! */
+  /* margin: 0 auto; */
 }
 
 /* .card footer img:hover { */

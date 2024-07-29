@@ -11,7 +11,10 @@ html {
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2rem;
+}
 
+/* Instead of polluting the body with other features like flex features, i defined the section in html and here too,to move the features from body in section below! */
+section {
   /* To bring the card in the middle of the page! */
   height: 100vh;
   display: flex;

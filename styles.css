@@ -29,7 +29,8 @@ body {
   transform: rotate(-5deg);
   transition: all 1s;
 
-  box-shadow: 0 0 30px 20px #f9f9f9;
+  /* box-shadow:inset hoff voff blur spread rgba(0, 0, 0, .5); */
+  box-shadow: 0 0 20px 30px #f9f9f9;
 }
 
 /* .card footer img:hover { */
